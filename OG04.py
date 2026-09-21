@@ -3,6 +3,16 @@ def ravenstvo_po_dvum_storonam_i_uglu(a1, b1, ugol1, a2, b2, ugol2):
         print("Треугольники равны по двум сторонам и углу между ними.")
     else:
         print("По данному признаку равенство треугольников не доказано.")
-        
-print("Введите длину двух сторон и размер угла Первого треугольника:")
-print("Введите длину двух сторон и размер угла Второго треугольника:")
+
+
+def ravenstvo_po_storone_i_dvum_uglam(storona1, ugol1a, ugol1b,
+                                      storona2, ugol2a, ugol2b):
+    if storona1 == storona2 and ugol1a == ugol2a and ugol1b == ugol2b:
+        print("Треугольники равны по стороне и двум прилежащим к ней углам.")
+    else:
+        print("По данному признаку равенство треугольников не доказано.")
+
+
+ravenstvo_po_dvum_storonam_i_uglu(5, 7, 60, 5, 7, 60)
+ravenstvo_po_storone_i_dvum_uglam(8, 45, 70, 8, 45, 70)
+
